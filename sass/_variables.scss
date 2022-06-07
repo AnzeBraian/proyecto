@@ -1,0 +1,102 @@
+@use 'sass:meta';
+
+
+
+@mixin head{
+    height: 100vh;
+}
+
+@mixin container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@mixin nav{
+    background: #143d64;
+    height: var(--height-nav);
+    color: #ffff;
+    width: 100%;
+    position: fixed;
+}
+
+@mixin nav-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin nav-link{
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+@mixin encabezado-principal{
+    display: flex;
+    height: calc(100vh - var(--height-nav));
+    min-height: 600px;
+    align-items: center;
+}
+
+@mixin encabezado-textos{
+    flex: 1;
+}
+
+@mixin encabezado-picture{
+    flex: 1;
+}
+
+@mixin encabezado-img{
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+@mixin encabezado-titulo{
+    font-size: 3rem;
+}
+
+@mixin encabezado-parrafo{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+@mixin cta{
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 1rem;
+    color: #fff;
+    text-decoration:none;
+    border-radius: 6px;
+}
+
+@mixin pie{
+    background: #143d64;
+    color: #fff;
+    justify-content: space-between;
+    height: 70px;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+@mixin pie-contenedor{
+    margin-top: 20px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;    
+}
+
+@mixin pie-red{
+    display: block;
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}

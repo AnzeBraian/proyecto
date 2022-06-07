@@ -1,0 +1,107 @@
+@use 'variables';
+
+.exp{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.exp__contenedor{
+    width: 27%;
+    background: #fff;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0,5,0,.9);
+    border-radius: 10px;
+}
+
+.exp__img{
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.exp__caja{
+    padding: 30px 20px 40px;
+
+    .exp__title{
+        font-size: 1,5rem;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .exp__parrafo{
+        font-weight: 300;
+        margin: 30px 0;
+    }
+    
+    .exp__link{
+    
+        display: block;
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+        border-radius: 30px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+    }
+
+}
+
+
+
+@media screen and (max-width:900px){
+    .exp{
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .exp__contenedor{
+        width: 100%;
+        background: #fff;
+        height: auto;
+        box-shadow: 0 0 5px rgba(0,5,0,.9);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .exp__img{
+        width: 100%;
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .exp__caja{
+        padding: 30px 20px 40px;
+    }
+    
+    .exp__title{
+        font-size: 1,5rem;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .exp__parrafo{
+        font-weight: 300;
+        margin: 30px 0;
+    }
+    
+    .exp__link{
+    
+        display: block;
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+        border-radius: 20px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        width: 200px;
+        margin: auto;
+    }
+}
